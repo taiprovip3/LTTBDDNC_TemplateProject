@@ -40,7 +40,7 @@ export default function Homepage({ navigation }) {
                             <Box flex="1">
                                 <ScrollView>
                                     <Text fontSize="xs">56</Text>
-                                    <Text fontSize="xs">Chelsea Rau Infernal Dragon Length So Long Cause I Need To Test ScrollView so I Write So Long Sorry You So Much To Read!</Text>
+                                    <Text fontSize="xs" onPress={() => navigation.navigate("FlyGame")}>Chelsea Rau Infernal Dragon Length So Long Cause I Need To Test ScrollView so I Write So Long Sorry You So Much To Read!</Text>
                                     <HStack space="2" justifyContent="center" alignItems="center">
                                         <Box><AntDesign name="minuscircleo" color="black" /></Box>
                                         <Box><Text fontSize="xs">52</Text></Box>
@@ -59,7 +59,7 @@ export default function Homepage({ navigation }) {
                                 <Box flex="1">
                                     <ScrollView>
                                         <Text fontSize="xs">{m.id}</Text>
-                                        <Text fontSize="xs">{m.name}</Text>
+                                        <Text fontSize="xs" onPress={() => navigation.navigate("MouseGame")}>{m.name}</Text>
                                         <HStack space="2" justifyContent="center" alignItems="center">
                                             <Box><AntDesign name="minuscircleo" color="black" /></Box>
                                             <Box><Text fontSize="xs">{m.quantity}</Text></Box>
